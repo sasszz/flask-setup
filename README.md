@@ -1,4 +1,5 @@
 # Flask App Checklist
+## Making the Root folder
 
 ```
 mkdir flask_dir
