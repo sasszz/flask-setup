@@ -1,4 +1,7 @@
 # Flask App Checklist
+
+<img src="flask-folder-tree.png" alt="Flask Folder Tree Diagram" </img>
+
 ## Making the Root folder
 
 ```
@@ -39,8 +42,9 @@ User Snippet: servflask
 User Snippet: bootshtml
 ```
 
-```
 <em>In <head></head> and before <title></title>:</em>
+
+```
 <!-- linking a javascript file -->
 <script type="text/javascript" src="{{ url_for('static', filename='my_script.js') }}"></script>
 <!-- linking an image -->
@@ -52,6 +56,9 @@ User Snippet: bootshtml
 ## In terminal - run:
 ```
 python3 server.py
+```
 
-## To view in Browser:
-head to Local Host bookmark
+<em>To view in Browser:</em>
+```
+head to Local Host bookmark and include root slash if specifiec
+```
