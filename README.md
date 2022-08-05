@@ -34,6 +34,10 @@ pipenv install flask
 ```
 touch server.py 
 ```
+Open VS Code:
+```
+code .
+```
 
 ## Paste into server.py:
 - <em> SEE PYTHON FILE IN REPO FOR DOCUMENT TEMPLATE </em>
