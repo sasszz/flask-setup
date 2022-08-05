@@ -18,6 +18,9 @@ cd flask_dir
 ```
 mkdir templates 
 cd templates
+```
+(MAC - creates an HTML file)
+```
 touch index.html
 ```
 (IMPORTANT: exit templates folder into main directory so we can add another folder)
@@ -28,6 +31,9 @@ cd ..
 ```
 mkdir static
 cd static
+```
+(MAC - creates a CSS and Javascript files)
+```
 touch style.css
 touch script.js
 ```
@@ -52,7 +58,7 @@ User Snippet: servflask
 ```
 
 ## Paste into index.html:
-- <em> SEE PYTHON FILE IN REPO FOR DOCUMENT TEMPLATE </em>
+- <em> SEE HTML FILE IN REPO FOR DOCUMENT TEMPLATE </em>
 - <em> SEE JSON FILE FOR SNIPPET </em>
 ```
 User Snippet: bootshtml
@@ -60,7 +66,7 @@ User Snippet: bootshtml
 #### If using User Snippet, proceed here:
 <em>In HEAD section and before TITLE:</em>
 ```
-(the proper way to link javascript, css and images in a Flask HTML file)
+(the proper way to link Javascript, CSS and images in a Flask HTML file)
 ```
 
 ```
@@ -74,8 +80,9 @@ User Snippet: bootshtml
 
 ## Initiating the server
 #### In terminal - run:
+(note "python3" is for MAC)
 ```
-python3 server.py (MAC)
+python3 server.py
 ```
 
 <em>To view in Browser:</em>
@@ -84,6 +91,7 @@ Head to http://localhost:5000/ (bookmark) include root slash if specified
 ```
 ## To exit Virtual Environment
 #### In terminal - run:
+(note command may work for MAC only)
 ```
 CTRL + C (MAC)
 ```
