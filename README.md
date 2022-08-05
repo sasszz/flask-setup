@@ -3,6 +3,7 @@
 <img src="flask-folder-tree.png" alt="Flask Folder Tree Diagram" height=200px>
 
 ## Making the Root folder
+#### In terminal - run:
 
 ```
 mkdir flask_dir
@@ -45,8 +46,8 @@ User Snippet: servflask
 ```
 User Snippet: bootshtml
 ```
-
-<em>In <head></head> and before <title></title>:</em>
+#### If using User Snippet, proceed here:
+<em>In HEAD section and before TITLE:</em>
 
 ```
 <!-- linking a javascript file -->
@@ -57,12 +58,18 @@ User Snippet: bootshtml
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_style.css') }}">
 ```
 
-## In terminal - run:
+## Initiating the server
+#### In terminal - run:
 ```
-python3 server.py
+python3 server.py (MAC)
 ```
 
 <em>To view in Browser:</em>
 ```
-head to Local Host bookmark and include root slash if specifiec
+Head to http://localhost:5000/ (bookmark) include root slash if specified
+```
+## To exit Virtual Environment
+#### In terminal - run:
+```
+CTRL + C (MAC)
 ```
