@@ -3,49 +3,35 @@
 <img src="flask-folder-tree.png" alt="Flask Folder Tree Diagram" height=200px>
 
 ## Making the Root folder
+#### Notes:
+- some commands may be MAC-specific
+- "flask_dir" = the name of your Flask App folder
+- "touch" on MAC creates an HTML file)
+- "cd" steps into the next folder
+- "cd .." steps back one folder
 #### In terminal - run:
-("flask_dir" = the name of your Flask App folder)
 
 ```
 mkdir flask_dir 
-```
-(changes directory to the Flask App folder just created)
-```
 cd flask_dir 
 ```
-(templates folder will contain HTML)
-
 ```
 mkdir templates 
 cd templates
-```
-(MAC - creates an HTML file)
-```
 touch index.html
-```
-(IMPORTANT: exit templates folder into main directory so we can add another folder)
-```
 cd ..
 ```
 (static folder will contain CSS, Javascript and Images)
 ```
 mkdir static
 cd static
-```
-(MAC - creates a CSS and Javascript files)
-```
 touch style.css
 touch script.js
-```
-(IMPORTANT: exit static folder into main directory so we can install Flask)
-```
 cd .. 
 ```
-(installs Flask in main Flask App folder)
 ```
 pipenv install flask 
 ```
-(MAC - creates a Python file)
 ```
 touch server.py 
 ```
@@ -80,7 +66,6 @@ bootshtml
 
 ## Initiating the server
 #### In terminal - run:
-(note "python3" is for MAC)
 ```
 python3 server.py
 ```
@@ -91,7 +76,6 @@ Head to http://localhost:5000/ (bookmark) include root slash if specified
 ```
 ## To exit Virtual Environment
 #### In terminal - run:
-(note command may work for MAC only)
 ```
 CTRL + C (MAC)
 ```
