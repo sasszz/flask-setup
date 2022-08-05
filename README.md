@@ -6,31 +6,31 @@
 #### In terminal - run:
 
 ```
-mkdir flask_dir
-cd flask_dir
+mkdir flask_dir (the name of your Flask App folder)
+cd flask_dir (changes directory to the Flask App folder just created)
 ```
 
 ```
-mkdir templates
+mkdir templates (templates folder will contain HTML)
 cd templates
 touch index.html
 cd ..
 ```
 
 ```
-mkdir static
+mkdir static (static folder will contain CSS, Javascript and Images)
 cd static
 touch style.css
 touch script.js
-cd ..
+cd .. (exit static folder into main directory so we can install Flask)
 ```
 
 ```
-pipenv install flask
+pipenv install flask (installs Flask in main Flask App folder)
 ```
 
 ```
-touch server.py
+touch server.py (MAC - creates a Python file)
 ```
 
 ## Paste into server.py:
@@ -48,6 +48,9 @@ User Snippet: bootshtml
 ```
 #### If using User Snippet, proceed here:
 <em>In HEAD section and before TITLE:</em>
+```
+(the proper way to link javascript, css and images in a Flask HTML file)
+```
 
 ```
 <!-- linking a javascript file -->
