@@ -6,7 +6,7 @@
 #### Notes:
 - some commands may be MAC-specific
 - "flask_dir" = the name of your Flask App folder
-- "touch" on MAC creates an HTML file)
+- "touch" on MAC creates a file
 - "cd" steps into the next folder
 - "cd .." steps back one folder
 #### In terminal - run:
@@ -21,7 +21,6 @@ cd templates
 touch index.html
 cd ..
 ```
-(static folder will contain CSS, Javascript and Images)
 ```
 mkdir static
 cd static
@@ -70,9 +69,9 @@ bootshtml
 python3 server.py
 ```
 
-<em>To view in Browser:</em>
+<em>To view in Browser</em>, head to
 ```
-Head to http://localhost:5000/ (bookmark) include root slash if specified
+http://localhost:5000/
 ```
 ## To exit Virtual Environment
 #### In terminal - run:
