@@ -4,33 +4,44 @@
 
 ## Making the Root folder
 #### In terminal - run:
+("flask_dir" = the name of your Flask App folder)
 
 ```
-mkdir flask_dir (the name of your Flask App folder)
-cd flask_dir (changes directory to the Flask App folder just created)
+mkdir flask_dir 
 ```
+(changes directory to the Flask App folder just created)
+```
+cd flask_dir 
+```
+(templates folder will contain HTML)
 
 ```
-mkdir templates (templates folder will contain HTML)
+mkdir templates 
 cd templates
 touch index.html
+```
+(IMPORTANT: exit templates folder into main directory so we can add another folder)
+```
 cd ..
 ```
-
+(static folder will contain CSS, Javascript and Images)
 ```
-mkdir static (static folder will contain CSS, Javascript and Images)
+mkdir static
 cd static
 touch style.css
 touch script.js
-cd .. (exit static folder into main directory so we can install Flask)
 ```
-
+(IMPORTANT: exit static folder into main directory so we can install Flask)
 ```
-pipenv install flask (installs Flask in main Flask App folder)
+cd .. 
 ```
-
+(installs Flask in main Flask App folder)
 ```
-touch server.py (MAC - creates a Python file)
+pipenv install flask 
+```
+(MAC - creates a Python file)
+```
+touch server.py 
 ```
 
 ## Paste into server.py:
