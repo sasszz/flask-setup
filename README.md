@@ -1,6 +1,6 @@
 # Flask App Checklist
-
-<img src="flask-folder-tree.png" alt="Flask Folder Tree Diagram" </img>
+## Flask App Folder Tree Diagram
+<img src="flask-folder-tree.png" alt="Flask Folder Tree Diagram" height=200px>
 
 ## Making the Root folder
 
@@ -33,11 +33,15 @@ touch server.py
 ```
 
 ## Paste into server.py:
+- <em> SEE PYTHON FILE IN REPO FOR DOCUMENT TEMPLATE </em>
+- <em> SEE JSON FILE FOR SNIPPET </em>
 ```
 User Snippet: servflask
 ```
 
 ## Paste into index.html:
+- <em> SEE PYTHON FILE IN REPO FOR DOCUMENT TEMPLATE </em>
+- <em> SEE JSON FILE FOR SNIPPET </em>
 ```
 User Snippet: bootshtml
 ```
