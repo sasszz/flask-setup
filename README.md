@@ -42,7 +42,7 @@ code .
 ## Paste into server.py:
 - <em> SEE PYTHON FILE IN REPO FOR DOCUMENT TEMPLATE </em>
 - <em> SEE JSON FILE FOR SNIPPET </em>
-User Snippet: 
+- User Snippet: 
 ```
 servflask
 ```
