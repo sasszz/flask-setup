@@ -53,21 +53,21 @@ touch server.py
 ## Paste into server.py:
 - <em> SEE PYTHON FILE IN REPO FOR DOCUMENT TEMPLATE </em>
 - <em> SEE JSON FILE FOR SNIPPET </em>
+User Snippet: 
 ```
-User Snippet: servflask
+servflask
 ```
 
 ## Paste into index.html:
 - <em> SEE HTML FILE IN REPO FOR DOCUMENT TEMPLATE </em>
 - <em> SEE JSON FILE FOR SNIPPET </em>
+User Snippet: 
 ```
-User Snippet: bootshtml
+bootshtml
 ```
 #### If using User Snippet, proceed here:
 <em>In HEAD section and before TITLE:</em>
-```
 (the proper way to link Javascript, CSS and images in a Flask HTML file)
-```
 
 ```
 <!-- linking a javascript file -->
