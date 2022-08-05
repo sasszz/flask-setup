@@ -46,14 +46,13 @@ servflask
 ## Paste into index.html:
 - <em> SEE HTML FILE IN REPO FOR DOCUMENT TEMPLATE </em>
 - <em> SEE JSON FILE FOR SNIPPET </em>
-User Snippet: 
+- User Snippet: 
 ```
 bootshtml
 ```
 #### If using User Snippet, proceed here:
-<em>In HEAD section and before TITLE:</em>
-(the proper way to link Javascript, CSS and images in a Flask HTML file)
-
+- The proper way to link Javascript, CSS and images in a Flask HTML file
+- <em>In the HEAD section and before TITLE:</em>
 ```
 <!-- linking a javascript file -->
 <script type="text/javascript" src="{{ url_for('static', filename='my_script.js') }}"></script>
@@ -76,5 +75,5 @@ http://localhost:5000/
 ## To exit Virtual Environment
 #### In terminal - run:
 ```
-CTRL + C (MAC)
+CTRL + C
 ```
