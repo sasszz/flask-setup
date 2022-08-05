@@ -3,9 +3,18 @@
 ```
 mkdir flask_dir
 cd flask_dir
+```
+
+```
 mkdir templates
-cd flask_dir
+cd templates
 touch index.html
+cd ..
+```
+
+```
+mkdir static
+cd static
 touch style.css
 touch script.js
 cd ..
