@@ -34,11 +34,13 @@ touch server.py
 User Snippet: servflask
 ```
 
-### Paste into index.html:
+## Paste into index.html:
 ```
 User Snippet: bootshtml
+```
 
-In <head></head> and before <title></title>:
+```
+<em>In <head></head> and before <title></title>:</em>
 <!-- linking a javascript file -->
 <script type="text/javascript" src="{{ url_for('static', filename='my_script.js') }}"></script>
 <!-- linking an image -->
