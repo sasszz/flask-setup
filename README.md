@@ -67,6 +67,10 @@ bootshtml
 ```
 
 ## Initiating the server
+#### Launch terminal from VS Code:
+```
+CTRL + SHIFT + `
+```
 #### In terminal - run:
 ```
 python3 server.py
