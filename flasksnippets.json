@@ -10,24 +10,41 @@
 //Paste in the following snippet before the final "}":
 
 	"Server.py File Template": {
-	  "prefix": "servflask",
+		"prefix": "flaskserverpy",
 		"body": [
 			"from flask import Flask, render_template, request, redirect, session",
 			"",
 			"app = Flask(__name__)",
+			"app.secret_key = 'Any string you wish, but KEEP DO NOT SHARE IT'",
 			"",
+			"# Prints 'Hello World' in http://localhost:5000/",
 			"@app.route('/')",
 			"def hello_world():",
 			"\treturn 'Hello World!'",
 			"",
+			"# Renders index.html at http://localhost:5000/html",
 			"@app.route('/html')",
 			"def run_html():",
 			"\treturn render_template('index.html')",
 			"",
+			"# Gathers user's input at http://localhost:5000/users, stores in session and redirects to http://localhost:5000/show",
+			"# NOTE: Always Redirect on a POST, never render",
+			"@app.route('/users', methods=['POST'])",
+			"def create_user():",
+			"\tprint('Got Post Info')",
+			"\tsession['name'] = request.form['name']",
+			"\tsession['email'] = request.form['email']",
+			"\treturn redirect('/show')",
+			"",
+			"# Display user's Post submission",
+			"@app.route('/show')",
+			"def show_user():",
+			"\treturn render_template('show.html', name_on_template=session['username'], email_on_template=session['useremail'])",
+			"",
 			"if __name__=='__main__':",
 			"\tapp.run(debug=True)",
 		],
-		"description": "Server.py File Template that prints Hello World"
+		"description": "Server.py File Template that has render, redirect and session"
 	}
 
 // ########################################################################################
@@ -60,5 +77,29 @@
 		"</html>",
 	],
 	"description": "Populates HTML file with auto Bootstrap",
-		}
+	},
+
+	"HTML Form for Flask App Session Submission": {
+		"prefix": "flaskform",
+		"body": [
+		"<form action='/users' method='post'>",
+        "\t<label for='name'>Name:</label>",
+        "\t<input type='text' name='name'>",
+        "\t<label for='email'>Email:</label>",
+        "\t<input type='text' name='email'>",
+        "\t<input type='submit' value='create user'>",
+    	"</form>",
+		],
+		"description" : "Populates an Example HTML form for Flask App Session Submission"
+	},
+
+	"Redirect after Form Submission for Flask App": {
+		"prefix": "flasksessionredirect",
+		"body": [
+			"<h1>Redirect After File Submission</h1>",
+			"<p>{{session['name']}}</p>",
+			"<p>{{session['email']}}</p>",
+		],
+		"description": "Populates H1 and P tags with Form Submission from /users Flask HTML"
+	},
 }
