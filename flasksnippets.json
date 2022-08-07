@@ -39,7 +39,7 @@
 			"# Display user's Post submission",
 			"@app.route('/show')",
 			"def show_user():",
-			"\treturn render_template('show.html', name_on_template=session['username'], email_on_template=session['useremail'])",
+			"\treturn render_template('show.html')",
 			"",
 			"if __name__=='__main__':",
 			"\tapp.run(debug=True)",
