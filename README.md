@@ -59,11 +59,11 @@ bootshtml
 - <em>In the HEAD section and before TITLE:</em>
 ```
 <!-- linking a javascript file -->
-<script type="text/javascript" src="{{ url_for('static', filename='my_script.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
 <!-- linking an image -->
 <img src="{{ url_for('static', filename='my_img.png') }}">
 <!-- linking a css style sheet -->
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 ```
 
 ## Initiating the server
