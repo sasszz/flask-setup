@@ -29,16 +29,39 @@ touch script.js
 cd .. 
 ```
 ```
-pipenv install flask 
+pipenv install flask pymysql
+pipenv shell
 ```
 ```
+touch README.md
 touch server.py 
+touch model.py
+touch mysqlconnection.py
 ```
 Open VS Code:
 ```
 code .
 ```
 
+## Paste into mysqlconnection.py:
+- <em> SEE PYTHON FILE IN REPO FOR DOCUMENT TEMPLATE </em>
+- <em> SEE JSON FILE FOR SNIPPET </em>
+- Change password to 'rootroot'
+- User Snippet: 
+```
+XXX
+```
+
+## Paste into model.py:
+- <em> SEE PYTHON FILE IN REPO FOR DOCUMENT TEMPLATE </em>
+- <em> SEE JSON FILE FOR SNIPPET </em>
+- enter name of SQL database in variable named DATABASE
+- User Snippet: 
+```
+XXX
+```
+
+```
 ## Paste into server.py:
 - <em> SEE PYTHON FILE IN REPO FOR DOCUMENT TEMPLATE </em>
 - <em> SEE JSON FILE FOR SNIPPET </em>
@@ -54,7 +77,7 @@ servflask
 ```
 bootshtml
 ```
-#### If using User Snippet, proceed here:
+#### If using User Snippets, proceed here:
 - The proper way to link Javascript, CSS and images in a Flask HTML file
 - <em>In the HEAD section and before TITLE:</em>
 ```
